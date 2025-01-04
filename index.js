@@ -1,223 +1,205 @@
-//-------------------toLowerCase() and toUpperCase()--------------------
-// let subject = 'Chemistry';
-// let book = 'chemistry';
-// if (subject.toLowerCase() === book) {
-//     console.log('I am reading book');
-// }
-// else {
-//     console.log('I am not reading book');
+// const phones = ['samsung', 'apple', 'realme', 'redme'];
+// for (let i = 0; i < phones.length; i++) {
+//     console.log(i)
+//     console.log(phones[i]);
 // }
 
 
-//-----------------------trim(), trimEnd(), trimStart()--------------------
-// let drink = 'water ';
-// let liquid = ' water';
-// if (drink.trimEnd() === liquid.trimStart()) {
-//     console.log('solid water');
-// }
-// else {
-//     console.log('wrong water');
+// const numbers = [231, 52, 63, 72, 36];
+// let i = 0;
+// while (i < numbers.length) {
+//     console.log(i);
+//     console.log(numbers[i]);
+//     i++;
 // }
 
 
-//---------------slice(2, 5)--------------------
-// const country = 'Bangladesh';
-// const part = country.slice(3, 7);
-// console.log(part);
-
-
-// --------------------split()------------------------
-// const sentence = 'I am a good person';
-// console.log(sentence.split(''));
-// const friendsStr = 'Rakib, Tareq, Saimon, Tanvir, Al-Hasan, Al-Hossen, Hasnat';
-// const friends = friendsStr.split(',');
-// console.log(friends);
-
-
-//-------------------------join()-----------------------------
-// const familyMember = ['Rakib', 'Tareq', 'Saimon', 'Tanvir', 'Al-Hasan', 'Al-Hossen', 'Hasnat'];
-// console.log(familyMember.join());
-// console.log(familyMember.join('|'));
-// console.log(familyMember.join('-'));
-
-
-//-----------------------concat and includes---------------------------
-// const first = 'Mohammad';
-// const last = 'Rakib';
-// const fullName = first.concat(' ').concat(last);
-// console.log(fullName.includes('c'));
-
-
-//-----------------------reverse string----------------------
-// let sentence = 'I am a web developer';
-// let reverse = '';
-// for (let letter of sentence) {
-//     // console.log(letter);
-//     reverse = letter + reverse;
-// }
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const reverse = numbers.reverse();
 // console.log(reverse);
 
-// let country = 'Bangladesh is my country';
-// let rev = '';
-// for (letter of country) {
-//     // console.log(letter);
-//     rev = letter + rev;
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const rev_num = [];
+// for (const num of numbers) {
+//     // console.log(num);
+//     rev_num.unshift(num);
 // }
-// console.log(rev);
-
-// let home = 'chittagong';
-// let rev = home.split('').reverse('').join('');
-// console.log(rev);
+// console.log(rev_num)
 
 
-//---------------object declare------------------
-// const student = {
-//     name: 'Mohammad Rakib',
-//     class: 12,
-//     subject: 'chemistry',
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const rev_num = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     const num = numbers[i];
+//     rev_num.unshift(num);
 // }
-// console.log(student.name);
-
-// const nam = student.name;
-// console.log(nam);
+// console.log(rev_num)
 
 
-// const bottle = {
-//     price: 230,
-//     color: 'yello',
-//     isClean: false
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const rev_num = [];
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//     const num = numbers[i];
+//     console.log(num);
+//     rev_num.push(num);
 // }
-// console.log(bottle['color']);
-// const dam = bottle['price'];
-// console.log(dam);
+// console.log(rev_num);
 
 
-// const laptop = {
-//     price: 100000,
-//     color: 'gray',
-//     brand: 'lenovo',
-//     ram: '8gb',
-//     ssd: '1TB',
-//     'order laptop': ['hp', 'asus', 'dell', 'apple', 'lenovo']
+// let friends = ['Elon', 'Mark', 'steve', 'waren'];
+// for (const friend of friends) {
+//     // console.log(friend);
 // }
-// laptop.price = 200000;
-// laptop['order laptop'] = ['apple', 'microsoft', 'asusbook']
-// console.log(laptop)
-// console.log(laptop['order laptop']);
-// const laptops = 'brand';
-// laptop[laptops] = 'apple';
-// console.log(laptop)
 
-
-// const mobile = {
-//     brand: 'apple',
-//     price: 100000,
-//     color: 'black',
-//     processor: 'octa-core',
-//     storage: 128,
-//     ram: 8,
+// for (let i = 0; i < friends.length; i++) {
+//     console.log(i)
+//     console.log(friends[i]);
 // }
-// const key = Object.keys(mobile);
-// console.log(key);
-// const value = Object.values(mobile);
-// console.log(value);
-// console.log(mobile);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i]);
+// }
 
 
-// const college = {
-//     name: 'vnc',
-//     class: ['10', '11', '12'],
-//     events: ['science fair', 'bijoy dibos', '21 Feb'],
-//     unique: {
-//         color: 'white',
-//         result: {
-//             gpa: 5,
-//             merit: 'top level'
-//         }
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let i = 0;
+// while (i < numbers.length) {
+//     console.log(numbers[i]);
+//     i++;
+// }
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// numbers.reverse();
+// console.log(numbers);
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let rev_numbers = [];
+// for (let num of numbers) {
+//     rev_numbers.unshift(num);
+// }
+// console.log(rev_numbers);
+
+
+// let friends = ['Elon', 'Mark', 'steve', 'waren'];
+// let rev_friends = [];
+// for (const friend of friends) {
+//     // console.log(friend);
+//     rev_friends.unshift(friend);
+// }
+// console.log(rev_friends);
+
+
+// let friends = ['Elon', 'Mark', 'steve', 'waren'];
+// let rev_friends = [];
+// for (let i = 0; i < friends.length; i++) {
+//     const friend = friends[i];
+//     rev_friends.unshift(friend);
+// }
+// console.log(rev_friends);
+
+
+// let friends = ['Elon', 'Mark', 'steve', 'waren'];
+// let i = 0;
+// let rev_friends = [];
+// while (i < friends.length) {
+//     const friend = friends[i];
+//     rev_friends.unshift(friend);
+//     i++;
+// }
+// console.log(rev_friends);
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let rev_num = [];
+// // for (let i = numbers.length - 1; i >= 0; i--) {
+// //     const num = numbers[i];
+// //     console.log(num);
+// // }
+
+// let i = numbers.length - 1;
+// while (i >= 0) {
+//     const num = numbers[i]
+//     console.log(num);
+//     rev_num.push(num)
+//     i--;
+// }
+// console.log(rev_num);
+
+//----------------------------------array-looping-tasks---------------------------------
+
+// const color = ['red', 'blue', 'green', 'yellow', 'orange'];
+// const rev_color = color.reverse();
+// console.log(rev_color);
+
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// const rev_colors = [];
+// for (const color of colors) {
+//     // console.log(color);
+//     rev_colors.unshift(color);
+// }
+// console.log(rev_colors);
+
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// const rev_color = [];
+// for (let i = colors.length - 1; i >= 0; i--) {
+//     let color = colors[i];
+//     console.log(color);
+//     rev_color.push(color);
+// }
+// console.log(rev_color);
+
+
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// let i = colors.length - 1;
+// let rev_color = [];
+// while (i >= 0) {
+//     let color = colors[i];
+//     // console.log(color);
+//     rev_color.push(color);
+//     i--;
+// }
+// console.log(rev_color);
+
+
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// const push_numbers = [];
+// for (const num of numbers) {
+//     // console.log(num);
+//     if (num % 2 === 0) {
+//         push_numbers.push(num);
+//         // console.log(num);
 //     }
 // }
-// console.log(college.events[2]);
-// console.log(college.unique.result.merit)
-// college.unique.result.merit = 'top higher level';
-// college.events[2] = '16 December';
-// college.events[1] = '16 dec';
-// delete college.name;
-// console.log(college)
+// console.log(push_numbers)
 
 
-//-------------------------(for in) only usege object---------------------
-// const mobile = {
-//     brand: 'Redmi',
-//     price: 20000,
-//     ram: '4gb',
-//     storage: 128,
-//     color: 'black',
-//     camera: '50mp',
-//     displaySize: '12 inc'
-// }
-
-// for (const key in mobile) {
-//     // console.log(mobile[key]);
-// }
-
-// const keys = Object.keys(mobile);
-// console.log(keys);
-
-// for (const key of keys) {
-//     console.log(key, ':', mobile[key]);
-// }
-
-
-
-//--------------------------------------------------- JS Task ------------------------------------------
-// let myObjects = {
-//     name: 'Tanvirul Islam',
-//     age: 25,
-//     city: 'Dhaka',
-//     isStudent: true
-// }
-
-// for (let key in myObjects) {
-//     console.log('key:', key, '| type:', typeof myObjects[key]);
-// }
-
-
-// const color = {
-//     red: '#ff0000',
-//     green: '#00ff00',
-//     blue: '#000ff',
-//     'golden rod': '#daa520'
-// }
-// const golden = color['golden rod'];
-// console.log(golden);
-
-
-// const car = {
-//     make: 'Toyota',
-//     model: 'Corolla',
-//     year: 2020
-// }
-// car['passengerCapacity'] = 5;
-// console.log(car)
-
-
-// const student = {
-//     name: 'Mohammad Rakib',
-//     id: 5421,
-//     physics: {
-//         subject: 'HSC physics',
-//         author: 'Tarek Hasan',
-//         marks: 30
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// const push_numbers = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
+//     // console.log(number);
+//     if(number % 2 === 0){
+//         // console.log(number)
+//         push_numbers.push(number);
 //     }
 // }
-// console.log(student.physics.marks);
+// console.log(push_numbers)
 
 
-// let student = {
-//     name: 'Alam',
-//     age: 23,
-//     city: 'chottogram',
-//     isStudent: true
+
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// const push_numbers = [];
+// let i = 0;
+// while (i < numbers.length) {
+//     // console.log(numbers[i]);
+//     const number = numbers[i];
+//     // console.log(number);
+//     if (number % 2 === 0) {
+//         push_numbers.push(number);
+//     }
+//     i++;
 // }
-// let checkProperty = Object.keys(student).length;
-// console.log(checkProperty);
+// console.log(push_numbers);
