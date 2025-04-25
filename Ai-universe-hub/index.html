@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/illustrator.png" type="image/x-icon">
+    <title>AI Universe Hub</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1 class="text-[#111111] font-semibold text-5xl text-center my-8">AI Universe Hub</h1>
+        <div class="text-center">
+            <button class="btn bg-[#EB5757] text-white font-semibold">Sort By Date</button>
+        </div>
+        <div id="data-container" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-4">
+
+        </div>
+        <div>
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="show_details_container.showModal()">open modal</button> -->
+            <dialog id="show_details_container" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <div id="show-display" class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button, it will close the modal -->
+                            <button class="btn bg-[#EB5757] text-white">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+        <div id="loading-spinner" class="text-center my-10 hidden">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+        <div id="see-more-container" class="text-center my-12 hi">
+            <button onclick="handleSeeMore()" class="btn bg-[#EB5757] text-white font-semibold">See More</button>
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="data.js"></script>
+</body>
+
+</html>
+
+<!-- API Links
+All data: https://openapi.programming-hero.com/api/ai/tools
+Single data details: https://openapi.programming-hero.com/api/ai/tool/${id}
+Single data Example: https://openapi.programming-hero.com/api/ai/tool/01 -->
